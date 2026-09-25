@@ -1,0 +1,42 @@
+TS&P — Propuesta de rediseño (prototipo HTML/CSS/JS)
+=====================================================
+
+CÓMO VERLO
+Abre index.html con doble clic (funciona sin servidor). Necesita internet solo para la tipografía (Google Fonts) y la foto del hero.
+
+PÁGINAS
+- index.html                     Inicio
+- nosotros.html                  Nosotros (historia, misión/visión/valores, credenciales, equipo)
+- servicios.html                 Resumen de servicios
+- servicio-guardias.html         Guardias de seguridad
+- servicio-escolta.html          Escolta y protección personal
+- servicio-poligrafo.html        Evaluación de confianza (polígrafo)
+- servicio-investigacion.html    Investigaciones privadas
+- sectores.html                  Sectores que protegemos (8 sectores)
+- casos.html                     Casos y testimonios
+
+ARCHIVOS COMPARTIDOS
+- css/styles.css   Colores, tipografía y componentes (variables en :root, arriba del archivo)
+- js/main.js       Datos de contacto (objeto SITE, arriba), menú y pie de página, íconos, formulario
+
+DÓNDE EDITAR
+- Teléfono, WhatsApp, email, dirección y horario: objeto SITE al inicio de js/main.js.
+  El menú y el pie de página se generan desde ahí, así que se cambian una sola vez.
+- Color verde de marca: --green en css/styles.css.
+- Foto del hero: en index.html, la línea con class="hero-photo". Reemplazar por una foto propia (assets/).
+
+CONTENIDO QUE HAY QUE COMPLETAR ANTES DE PUBLICAR (marcado en amarillo en el sitio)
+- Testimonios y casos (casos.html): son plantillas; no hay citas ni cifras reales.
+- Logos de clientes (index.html y casos.html), solo con autorización de cada cliente.
+- Permisos y certificaciones (nosotros.html): indicar solo los que estén vigentes.
+- Equipo, historia, misión y visión (nosotros.html).
+- Cifras del inicio: "24/7" y "100% confidencialidad" son propuestas; confirmar que TS&P las puede cumplir.
+- Respuestas de las preguntas frecuentes (FAQ) de cada servicio: validarlas con el equipo.
+
+FORMULARIO DE COTIZACIÓN
+Arma un mensaje con los datos y abre WhatsApp (wa.me/593983393462). No requiere servidor.
+Para recibir los datos por correo se necesitaría un servicio de formularios o backend.
+
+PASAR A WORDPRESS
+Este prototipo es HTML estático. Se puede usar como diseño de referencia para reconstruirlo en el tema
+actual o en Elementor, o publicarlo como sitio estático en el hosting.

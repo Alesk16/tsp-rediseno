@@ -70,8 +70,11 @@
     '<path d="M24 3l17 6v13c0 11-7.5 19-17 23C14.5 41 7 33 7 22V9z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>' +
     '<path d="M15 17.5h18M24 17.5V34" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/></svg>';
 
+  var inPages = /\/pages\/|\\pages\\/.test(window.location.pathname) || window.location.href.indexOf("/pages/") !== -1 || window.location.href.indexOf("\\pages\\") !== -1;
+  var pfx = inPages ? "" : "pages/";
+
   function brand() {
-    return '<a class="brand" href="index.html" aria-label="TS&P — Inicio">' + BRAND_MARK +
+    return '<a class="brand" href="' + pfx + 'index.html" aria-label="TS&P — Inicio">' + BRAND_MARK +
       '<span class="brand-text"><strong>TS<span>&amp;</span>P</strong><small>Total Security &amp; Protection</small></span></a>';
   }
 
@@ -91,17 +94,17 @@
     '<header class="site-header"><div class="container">' + brand() +
       '<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">' + svg("menu") + '</button>' +
       '<nav class="nav" id="nav" aria-label="Principal"><ul>' +
-        '<li><a class="nav-link' + active("inicio") + '" href="index.html">Inicio</a></li>' +
-        '<li><a class="nav-link' + active("nosotros") + '" href="nosotros.html">Nosotros</a></li>' +
-        '<li class="has-sub"><a class="nav-link' + active("servicios") + '" href="servicios.html">Servicios ' + svg("chevron") + '</a>' +
+        '<li><a class="nav-link' + active("inicio") + '" href="' + pfx + 'index.html">Inicio</a></li>' +
+        '<li><a class="nav-link' + active("nosotros") + '" href="' + pfx + 'nosotros.html">Nosotros</a></li>' +
+        '<li class="has-sub"><a class="nav-link' + active("servicios") + '" href="' + pfx + 'servicios.html">Servicios ' + svg("chevron") + '</a>' +
           '<div class="submenu">' +
-            '<a href="servicio-guardias.html">' + svg("shield-check") + 'Guardias de seguridad</a>' +
-            '<a href="servicio-escolta.html">' + svg("user") + 'Escolta y protección personal</a>' +
-            '<a href="servicio-poligrafo.html">' + svg("activity") + 'Evaluación de confianza (polígrafo)</a>' +
-            '<a href="servicio-investigacion.html">' + svg("search") + 'Investigaciones privadas</a>' +
+            '<a href="' + pfx + 'servicio-guardias.html">' + svg("shield-check") + 'Guardias de seguridad</a>' +
+            '<a href="' + pfx + 'servicio-escolta.html">' + svg("user") + 'Escolta y protección personal</a>' +
+            '<a href="' + pfx + 'servicio-poligrafo.html">' + svg("activity") + 'Evaluación de confianza (polígrafo)</a>' +
+            '<a href="' + pfx + 'servicio-investigacion.html">' + svg("search") + 'Investigaciones privadas</a>' +
           '</div></li>' +
-        '<li><a class="nav-link' + active("sectores") + '" href="sectores.html">Sectores</a></li>' +
-        '<li><a class="nav-link' + active("casos") + '" href="casos.html">Casos y testimonios</a></li>' +
+        '<li><a class="nav-link' + active("sectores") + '" href="' + pfx + 'sectores.html">Sectores</a></li>' +
+        '<li><a class="nav-link' + active("casos") + '" href="' + pfx + 'casos.html">Casos y testimonios</a></li>' +
       '</ul>' +
       '<a class="btn btn-primary btn-sm" href="' + WA_BASE + '?text=' + encodeURIComponent("Hola TS&P, quisiera solicitar una cotización.") + '" target="_blank" rel="noopener">' + svg("whatsapp") + 'Cotizar</a>' +
       '</nav></div></header>';
@@ -114,16 +117,16 @@
           '<p style="max-width:26em;font-size:.92rem">Con una sólida trayectoria en seguridad e investigaciones, velamos por tu tranquilidad, la de tu familia y la de tu empresa.</p>' +
         '</div>' +
         '<div><h4>Servicios</h4><ul>' +
-          '<li><a href="servicio-guardias.html">Guardias de seguridad</a></li>' +
-          '<li><a href="servicio-escolta.html">Escolta y protección personal</a></li>' +
-          '<li><a href="servicio-poligrafo.html">Evaluación de confianza</a></li>' +
-          '<li><a href="servicio-investigacion.html">Investigaciones privadas</a></li>' +
+          '<li><a href="' + pfx + 'servicio-guardias.html">Guardias de seguridad</a></li>' +
+          '<li><a href="' + pfx + 'servicio-escolta.html">Escolta y protección personal</a></li>' +
+          '<li><a href="' + pfx + 'servicio-poligrafo.html">Evaluación de confianza</a></li>' +
+          '<li><a href="' + pfx + 'servicio-investigacion.html">Investigaciones privadas</a></li>' +
         '</ul></div>' +
         '<div><h4>Empresa</h4><ul>' +
-          '<li><a href="nosotros.html">Nosotros</a></li>' +
-          '<li><a href="sectores.html">Sectores que protegemos</a></li>' +
-          '<li><a href="casos.html">Casos y testimonios</a></li>' +
-          '<li><a href="index.html#cotizar">Solicitar cotización</a></li>' +
+          '<li><a href="' + pfx + 'nosotros.html">Nosotros</a></li>' +
+          '<li><a href="' + pfx + 'sectores.html">Sectores que protegemos</a></li>' +
+          '<li><a href="' + pfx + 'casos.html">Casos y testimonios</a></li>' +
+          '<li><a href="' + pfx + 'index.html#cotizar">Solicitar cotización</a></li>' +
         '</ul></div>' +
         '<div><h4>Contacto</h4><ul class="contact-mini">' +
           '<li>' + svg("pin") + '<a href="' + SITE.mapsUrl + '" target="_blank" rel="noopener">' + SITE.address + '<br>' + SITE.city + '</a></li>' +

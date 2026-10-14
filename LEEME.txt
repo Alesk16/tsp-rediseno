@@ -4,16 +4,17 @@ TS&P — Propuesta de rediseño (prototipo HTML/CSS/JS)
 CÓMO VERLO
 Abre index.html con doble clic (funciona sin servidor). Necesita internet solo para la tipografía (Google Fonts) y la foto del hero.
 
-PÁGINAS
-- index.html                     Inicio
-- nosotros.html                  Nosotros (historia, misión/visión/valores, credenciales, equipo)
-- servicios.html                 Resumen de servicios
-- servicio-guardias.html         Guardias de seguridad
-- servicio-escolta.html          Escolta y protección personal
-- servicio-poligrafo.html        Evaluación de confianza (polígrafo)
-- servicio-investigacion.html    Investigaciones privadas
-- sectores.html                  Sectores que protegemos (8 sectores)
-- casos.html                     Casos y testimonios
+PÁGINAS (dentro de la carpeta pages/)
+- index.html (en la raíz)        Redirección automática hacia pages/index.html
+- pages/index.html              Inicio
+- pages/nosotros.html           Nosotros (historia, misión/visión/valores, credenciales, equipo)
+- pages/servicios.html          Resumen de servicios
+- pages/servicio-guardias.html  Guardias de seguridad
+- pages/servicio-escolta.html   Escolta y protección personal
+- pages/servicio-poligrafo.html Evaluación de confianza (polígrafo)
+- pages/servicio-investigacion.html Investigaciones privadas
+- pages/sectores.html           Sectores que protegemos (8 sectores)
+- pages/casos.html              Casos y testimonios
 
 ARCHIVOS COMPARTIDOS
 - css/styles.css   Colores, tipografía y componentes (variables en :root, arriba del archivo)

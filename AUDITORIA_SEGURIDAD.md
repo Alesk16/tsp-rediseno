@@ -10,17 +10,20 @@
 .
 ├── .git/
 ├── css/
+│   └── styles.css
 ├── js/
 │   └── main.js
-├── index.html (Punto de entrada principal)
-├── nosotros.html
-├── servicios.html
-├── servicio-escolta.html
-├── servicio-guardias.html
-├── servicio-investigacion.html
-├── servicio-poligrafo.html
-├── sectores.html
-├── casos.html
+├── pages/
+│   ├── index.html
+│   ├── nosotros.html
+│   ├── servicios.html
+│   ├── servicio-escolta.html
+│   ├── servicio-guardias.html
+│   ├── servicio-investigacion.html
+│   ├── servicio-poligrafo.html
+│   ├── sectores.html
+│   └── casos.html
+├── index.html (Redirección automática hacia pages/index.html)
 ├── LEEME.txt
 └── .gitattributes
 ```
